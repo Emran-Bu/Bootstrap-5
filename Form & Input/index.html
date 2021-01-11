@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form | Input</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1 class="display-1 text-customize text-center">Form | Input</h1>
+      <div class="container">
+        <!-- FORM -->
+        <form class="" action="index.html" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control form-control-sm" type="text" name="" value="" placeholder="Enter name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input class="form-control form-control-lg" type="email" name="" value="" placeholder="Enter email">
+            <small class="form-text">Your email will not be share with anyone</small>
+          </div>
+
+          <div class="form-group">
+            <label for="password">password</label>
+            <input class="form-control" type="password" name="" value="" placeholder="password" readonly>
+          </div>
+
+          <div class="form-group">
+            <label for="Gender">Gender</label>
+              <select class="form-control" name="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+              </select>
+          </div>
+
+          <div class="">
+            <label for="message">message</label>
+            <textarea class="form-control" name="name" rows="5" cols="50"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="File">File Input</label>
+            <input class="form-control" type="file" name="" value="">
+              <small class="form-text">Max 2MB size</small>
+          </div>
+
+          <fieldset class="form-group">
+            <legend>What's Your Gender?</legend>
+            <div class="form-check">
+              <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="gender" value="">
+                Male
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="gender" value="">
+                Female
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="gender" value="" disabled>
+                Other
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-check">
+            <legend class="">checkbox</legend>
+            <label class="form-check-label" for="checkbox">
+              <input class="form-check-input" type="checkbox" name="" value="">
+              checkbox
+            </label>
+          </div>
+          <button class="btn btn-primary" type="button" name="button">submit</button>
+        </form>
+        <br>
+        <!-- FORM INLINE/ROWS -->
+        <form class="row" action="index.html" method="post">
+          <label class="col" for="">Name:</label>
+          <input class="form-control col" type="text" name="" value="">
+          <label class="col" for="">Password:</label>
+          <input class="form-control me-2 col" type="password" name="" value="">
+          <div class="form-check col">
+            <label class="form-check-label" for="">
+              <input class="form-check-input" type="checkbox" name="" value="">
+              Remember me
+            </label>
+            <button class="btn btn-primary col" type="button" name="button">Sign up</button>
+          </div>
+        </form>
+        <br>
+        <!-- VALIDATION -->
+        <div class="form-group">
+          <label for="username">Username :</label>
+          <input class="form-control is-valid" type="text" name="" value="">
+          <div class="valid-feedback">Username available</div>
+          <small>Must be at least 8 characters</small>
+        </div>
+        <br>
+        <div class="">
+          <label for="Password">Password :</label>
+          <input class="form-control is-invalid" type="password" name="" value="">
+          <div class="invalid-feedback">That password is not safe</div>
+          <small>Please use a strong password</small>
+        </div>
+      </div>
+    <script type="text/javascript" src="font/fontawesome-free-5.js">
+    </script>
+   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
