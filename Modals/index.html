@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Popovers</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+	  <h2 class="display-1 text-center">Popovers</h2>
+    <div class="container">
+      <!-- Modal Trigger -->
+      <h2>Modal Trigger</h2>
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#mymodal" type="button" name="button">Launch Modal</button>
+      <!--Login Modal Trigger -->
+      <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Title</h5>
+              <button class="btn close" data-bs-dismiss="modal" type="button" name="button">&times;</button>
+            </div>
+
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal" type="button" name="button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Login Modal -->
+      <h2>Login Modal</h2>
+      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginmodal" type="button" name="button">Login Modal</button>
+
+      <div class="modal" id="loginmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>User Login</h5>
+              <button class="btn" data-bs-dismiss="modal" type="button" name="button">&times;</button>
+            </div>
+
+            <div class="modal-body">
+              <form class="" action="index.html" method="post">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input class="form-control" placeholder="username" type="text" name="" value="">
+                </div>
+                <div class="form-group">
+                  <label for="password">password</label>
+                  <input class="form-control" placeholder="password" type="password" name="" value="">
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-dismiss="modal" type="button" name="button">Close</button>
+              <button class="btn btn-success" type="submit" name="button">Login</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <!-- container div -->
+    </div>
+
+   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
